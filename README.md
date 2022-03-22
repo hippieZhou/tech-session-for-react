@@ -14,7 +14,8 @@ this repo shows that how to use `react-redux` in `React` applicaion.
 │       ├── CounterReducer.js
 │       ├── CounterSelector.js
 │       ├── components
-│       │   └── Counter.js
+│       │   ├── Counter.js
+│       │   └── CounterV2.js
 │       └── createCounterDispatcher.js
 ├── index.js
 └── store
