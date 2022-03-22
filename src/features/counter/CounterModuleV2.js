@@ -2,7 +2,7 @@ import React from "react";
 import { connect, Provider } from "react-redux";
 import Store from "../../store/Store";
 import CounterReducer from "./CounterReducer";
-import Counter from "../components/Counter";
+import Counter from "./components/Counter";
 import { getCounterValue } from "./CounterSelector";
 import createCounterDispatcher from "./createCounterDispatcher";
 

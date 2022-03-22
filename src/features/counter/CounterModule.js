@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import Store from "../../store/Store";
 import CounterReducer from "./CounterReducer";
 import createCounterDispatcher from "./createCounterDispatcher";
-import Counter from "../components/Counter";
+import Counter from "./components/Counter";
 
 // 类组件
 class CounterModule extends React.Component {
