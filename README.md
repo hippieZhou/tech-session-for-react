@@ -1,3 +1,29 @@
+# Intro
+
+this repo shows that how to use `react-redux` in `React` applicaion.
+
+```bash
+├── App.css
+├── App.js
+├── features
+│   └── counter
+│       ├── CounterIntents.js
+│       ├── CounterModule.js
+│       ├── CounterModuleV2.js
+│       ├── CounterModuleV3.js
+│       ├── CounterReducer.js
+│       ├── CounterSelector.js
+│       ├── components
+│       │   └── Counter.js
+│       └── createCounterDispatcher.js
+├── index.js
+└── store
+    ├── Store.js
+    └── createReducer.js
+```
+
+> you can see `CounterModule` , `CounterModuleV2` , `CounterModuleV3` for more detail. in my mind. **UI Component(func component)** just used for view and **Container Component(class component)** used to business logic.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

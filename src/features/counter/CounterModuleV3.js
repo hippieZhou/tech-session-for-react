@@ -11,12 +11,9 @@ const store = new Store(CounterReducer);
 // 函数组件
 export const CounterModuleV3 = () => {
   const dispatcher = createCounterDispatcher(store);
-  const [state, setState] = useState(store.getState());
 
-  const updateState = () => {
-    let curState = store.getState();
-    setState(curState);
-  };
+  const [state, setState] = useState(store.getState());
+  const updateState = () => setState(store.getState());
 
   useEffect(() => {
     store.subscribe(updateState);

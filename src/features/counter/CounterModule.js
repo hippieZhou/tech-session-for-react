@@ -11,12 +11,9 @@ class CounterModule extends React.Component {
     super(props);
     this.store = new Store(CounterReducer);
     this.dispatcher = createCounterDispatcher(this.store);
-    this.unsubscribeFromStore = () => {
-      this.store.unsubscribeAll();
-    };
     this.store.subscribe(() => {
-      // console.log(this.store.getState());
       this.setState(this.store.getState());
+      return () => this.store.unsubscribeAll();
     });
   }
 
