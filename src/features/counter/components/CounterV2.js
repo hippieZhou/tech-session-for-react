@@ -1,6 +1,6 @@
-import { COUNTER_DECREMENT, COUNTER_INCREMENT } from "../CounterIntents";
-import { getCounterValue } from "../CounterSelector";
+import { getCounterValue, doIncrement, doDecrement } from "../CounterSelector";
 import { connect } from "react-redux";
+
 //定义核心组件
 const CounterV2 = (props) => {
   return (
@@ -17,8 +17,8 @@ const mapStateToProps = (state) => ({
 });
 
 const dispatchToProps = (dispatch) => ({
-  increment: (payload) => dispatch({ intent: COUNTER_INCREMENT, payload }),
-  decrement: (payload) => dispatch({ intent: COUNTER_DECREMENT, payload }),
+  increment: (payload) => doIncrement(dispatch, payload),
+  decrement: (payload) => doDecrement(dispatch, payload),
 });
 
 export default connect(mapStateToProps, dispatchToProps)(CounterV2);
