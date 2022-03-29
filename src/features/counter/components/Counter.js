@@ -5,8 +5,8 @@ const Counter = (props) => {
   return (
     <div>
       Value: {value}
-      <button onClick={increment.bind(this, 10)}>Deposit</button>
-      <button onClick={decrement.bind(this, 5)}>Withdrow</button>
+      <button onClick={() => increment(10)}>Deposit</button>
+      <button onClick={() => decrement(5)}>Withdrow</button>
     </div>
   );
 };
