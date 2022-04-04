@@ -5,10 +5,9 @@ import Store from "../../store/Store";
 import CounterReducer from "./CounterReducer";
 import createCounterDispatcher from "./createCounterDispatcher";
 
-// 需要独立于函数组件来定义，确保对象唯一
+//need to as a global veriable .
 const store = new Store(CounterReducer);
 
-// 函数组件
 export const CounterModuleV3 = () => {
   const dispatcher = createCounterDispatcher(store);
 

@@ -5,7 +5,6 @@ import CounterReducer from "./CounterReducer";
 import createCounterDispatcher from "./createCounterDispatcher";
 import Counter from "./components/Counter";
 
-// 类组件
 class CounterModule extends React.Component {
   constructor(props) {
     super(props);

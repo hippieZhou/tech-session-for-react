@@ -4,7 +4,7 @@ const Counter = (props) => {
   const { value, increment, decrement } = { ...props };
   return (
     <div>
-      Value: {value}
+      <p>Value: {value}</p>
       <button onClick={() => increment(10)}>Deposit</button>
       <button onClick={() => decrement(5)}>Withdrow</button>
     </div>

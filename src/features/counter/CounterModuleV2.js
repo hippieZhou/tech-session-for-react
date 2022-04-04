@@ -4,7 +4,6 @@ import Store from "../../store/Store";
 import CounterReducer from "./CounterReducer";
 import CounterV2 from "./components/CounterV2";
 
-//TODO: 简化类组件
 class CounterModuleV2 extends React.Component {
   constructor(props) {
     super(props);

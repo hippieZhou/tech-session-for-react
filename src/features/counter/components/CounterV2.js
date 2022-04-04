@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 const CounterV2 = (props) => {
   return (
     <div>
-      Value: {props.counterValue}
+      <p>Value: {props.counterValue}</p>
       <button onClick={() => props.increment(10)}>Deposit</button>
       <button onClick={() => props.decrement(5)}>Withdrow</button>
     </div>

@@ -6,11 +6,11 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <p>类组件</p>
+      <h1>类组件</h1>
       <CounterModule></CounterModule>
-      <p>类组件（进化版）</p>
+      <h1>类组件（进化版）</h1>
       <CounterModuleV2></CounterModuleV2>
-      <p>函数组件</p>
+      <h1>函数组件</h1>
       <CounterModuleV3></CounterModuleV3>
     </div>
   );
